@@ -1,0 +1,563 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.heroSection{
+    height: 100vh;
+}
+
+.heroBack{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(Images/BK\ Image.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: cover;
+    justify-content: center;
+}
+
+.navBar div{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    justify-content: left;
+    margin: 1% 10% 1% 20%;
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+}
+
+.theNav{
+    justify-content: right;
+    margin: 1% 20% 1% 1%;
+    
+}
+
+
+.theNav ul{
+    display: flex;
+}
+.theNav ul li{
+    color: #fff;
+    padding: 0 10px;
+    list-style: none;
+    text-align: center;
+    border-left: solid 2px #fff;
+    height: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.theNav ul li:first-child{
+    border-left: none;
+}
+.theNav ul li:nth-child(3){
+    border-right: solid 2px #fff;
+}
+.getTheApp{
+    border-bottom: #EFB033 solid 2px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    height: 40px;
+}
+.theNav li a{
+    text-decoration: none;
+    color: #fff;
+}
+.theNav li a:hover{
+    color: #EFB033;
+}
+
+@media only screen and (max-width: 1080px){
+    .theNav ul li{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .theNav ul li{
+        padding: 3px;
+    }
+    .theNav{
+        margin: 1% 0;
+    }
+    .logo{
+        margin: 1% 0;
+    }
+    .navBar{
+        padding: 0 15%;
+    }
+}
+
+@media only screen and (max-width: 660px){
+    .theNav ul{
+        display: none;
+    }
+    .heroMainCtn, .sec3Div, .sec4Div{
+        padding: 0px !important;
+    }
+    .textSection2{
+        margin: 0 !important;
+    }
+    .downImg img{
+        margin-right: 10px !important;
+    }
+}
+
+/* section 1 */
+
+.heroMainCtn{
+    position: relative;
+    height: 80vh;
+    margin: 20px;
+    padding: 10%;
+}
+
+.heroHeadings, .otherHeroDiv{
+    width: 40%;
+    padding: 20px;
+    position:absolute;
+    vertical-align: middle;
+    top: 20%;
+}
+
+
+.heroHeadings h1{
+    color: #EFB033;
+}
+.heroP1{
+    color: #fff;
+    font-size: 70px;
+}
+.heroP1 span{
+    font-weight: bolder;
+}
+.heroP2{
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.heroHeadings button{
+    padding: 20px 10px;
+    border-radius: 50px;
+    width: 300px;
+    font-size: 25px;
+    border: none;
+}
+.heroBtn1{
+    background-color: #066166;
+    color: #fff;
+    margin-right: 20px;
+}
+.heroBtn1 a{
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+}
+
+.heroBtn2{
+    background-color: #EFB033;
+    color: #066166;
+    margin-right: 20px;
+}
+.heroBtn2 a{
+    text-decoration: none;
+    color: #066166;
+    width: 100%;
+}
+
+.arrowCtn{
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: -30px;
+    
+}
+.bottomArrow{
+    justify-content: center;
+    background-color: #066166;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    border-radius: 50%;
+    z-index: 999;
+    
+}
+.line{
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 1300px){
+    .heroP1{
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+    .heroP2{
+        font-size: 20px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .heroHeadings{
+        width: 50%;
+    }
+    .heroHeadings button{
+        width: 200px;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+}
+@media only screen and (max-width: 1080px){
+    .arrowCtn{
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .heroHeadings{
+        width: 100%;
+        padding-right: 20%;
+    }
+    .otherHeroDiv{
+        display: none;
+    }
+}
+
+/* secion 2 */
+
+.section2{
+    height: 80vh;
+}
+.section2Back{
+    height: 100%;
+    background-color: #066166;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.4) 5%, transparent 5%), radial-gradient(rgba(255, 255, 255, 0.4) 5%, transparent 5%);
+    background-position: 0 0, 50px 50px;
+    background-size: 100px 100px;
+    
+}
+.sec2Div{
+    position: relative;
+    display: flex;
+}
+
+.imgSection2, .textSection2{
+    width: 50%;
+    position: relative;
+    margin: auto;
+    padding: 20px;
+}
+.downImg img{
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.textSection2 h2{
+    color: #EFB033;
+    font-size: 30px;
+}
+.csjb{
+    color: #fff;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.ts2Span{
+    font-weight: bold;
+}
+.textSection2 p{
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.imgSection2{
+    text-align: center;
+}
+.iphoneCtn img{
+    height: 700px;
+}
+.arrowCtn2{
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    
+}
+
+@media only screen and (max-width: 1300px){
+    .iphoneCtn img{
+        height: 500px;
+    }
+    .textSection2 h2{
+        font-size: 20px;
+    }
+    .csjb{
+        font-size: 30px;
+    }
+    .downImg img{
+        width: 200px;
+    }
+    .arrowCtn2{
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 1080px){
+    .section2{
+        height: 60vh;
+    }
+    .arrowCtn2{
+        margin-top: 15px;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .imgSection2, .textSection2{
+        width: 100%;
+    }
+    .textSection2{
+        margin-left: 8%;
+    }
+    .sec2Div{
+        display: block;
+        padding: 0 10%;
+    }
+    .section2{
+        height: 100%;
+        justify-content: center;
+    }
+}
+
+/* section 3 */
+
+.section3{
+    height: 60vh;
+    
+}
+.section3Back{
+    background-color: #EFB033;
+    height: 100%;
+    
+}
+
+.sec3Div{
+    display: flex;
+    position: relative;
+    height: 100%;
+    padding: 0 10%;
+}
+
+.sec3textdiv, .sec3imgdiv{
+    width: 50%;
+    position: relative;
+    margin: auto;
+    padding: 20px;
+}
+.icons1img img{
+    width: 100%;
+}
+
+.sec3imgdiv img{
+    width: 100%;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.sec3textdiv h2{
+    color: #fff;
+    font-size: 40px;
+    margin: 20px 0;
+}
+.p1stp{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.p2ndp, .p3rdp, .p4thp{
+    margin: 20px 0;
+}
+
+.arrowCtn3{
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: -30px;
+}
+
+@media only screen and (max-width: 1300px){
+    .section3{
+        height: 80vh;
+    }
+}
+@media only screen and (max-width: 1080px){
+    .section3{
+        height: 60vh;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .sec3Div{
+        display: block;
+    }
+    .section3{
+        height: 100%;
+    }
+    .sec3textdiv, .sec3imgdiv{
+        width: 100%;
+    }
+    .sec3textdiv{
+        margin-left: 60px;
+    }
+    .sec3imgdiv img{
+        padding: 0 50px 20px 50px;
+        margin-left: 0px;
+    }
+    .icons1img img{
+        width: 50%;
+    }
+}
+
+/* section 4 */
+
+.section4{
+    height: 60vh;
+    
+}
+.section4Back{
+    background-color: #fff;
+    height: 100%;
+    
+}
+
+.sec4Div{
+    display: flex;
+    position: relative;
+    height: 100%;
+    padding: 0 100px;
+}
+
+.sec4textdiv, .sec4imgdiv{
+    width: 50%;
+    position: relative;
+    margin: auto;
+    padding: 20px;
+}
+.icons2img img{
+    width: 100%;
+}
+
+.sec4textdiv img{
+    width: 100%;
+    cursor: pointer;
+}
+
+.sec4imgdiv{
+    margin-left: 60px;
+}
+
+.sec4imgdiv h2{
+    color: #066166;
+    font-size: 40px;
+    margin: 20px 0;
+}
+.p1stp4{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.p2ndp4, .p3rdp4, .p4thp4{
+    margin: 20px 0;
+}
+
+.arrowCtn4{
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: -30px;
+}
+
+@media only screen and (max-width: 1300px){
+    .section4{
+        height: 80vh;
+    }
+}
+@media only screen and (max-width: 1080px){
+    .section4{
+        height: 60vh;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .sec4textdiv, .sec4imgdiv{
+        width: 100%;
+    }
+    .sec4Div{
+        display: block;
+    }
+    .section4{
+        height: 100%;
+        justify-content: center;
+    }
+    .icons2img img{
+        width: 50%;
+        padding-bottom: 20px;
+    }
+    .sec4textdiv img{
+        padding: 0 50px;
+    }
+}
+
+/* footer  */
+
+.footer{
+    height: 30vh;
+}
+.footerCtn{
+    height: 100%;
+    background-color: #066166;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.4) 5%, transparent 5%), radial-gradient(rgba(255, 255, 255, 0.4) 5%, transparent 5%);
+    background-position: 0 0, 50px 50px;
+    background-size: 100px 100px;
+    justify-content: center;
+    text-align: center;
+}
+
+.downBtns img{
+    width: 250px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.textDwn{
+    color: #fff;
+    font-size: 50px;
+    padding-top: 30px;
+}
+.textDwn span{
+    font-weight: bold;
+}
+
+.apple1{
+    margin-right: 20px;
+}
+.google1{
+    margin-left: 20px;
+}
