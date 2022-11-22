@@ -114,6 +114,8 @@ body{
     }
 }
 
+
+
 /* section 1 */
 
 .heroMainCtn{
@@ -240,6 +242,19 @@ body{
     }
 }
 
+@media only screen and (max-width: 550px){
+    .heroP1{
+        font-size: 40px;
+    }
+    .heroMainCtn{
+        height: 100%;
+    }
+    .heroHeadings button{
+        width: 150px;
+        font-size: 15px;
+    }
+}
+
 /* secion 2 */
 
 .section2{
@@ -347,6 +362,15 @@ body{
     }
 }
 
+@media only screen and (max-width: 550px){
+    .iphoneCtn img{
+        height: 300px;
+    }
+    .downImg img{
+        width: 150px;
+    }
+}
+
 /* section 3 */
 
 .section3{
@@ -432,6 +456,16 @@ body{
     }
     .icons1img img{
         width: 50%;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .sec3textdiv h2{
+        font-size: 30px;
+    }
+    .p1stp{
+        font-size: 15px;
+        margin-right: 20%;
     }
 }
 
@@ -525,6 +559,16 @@ body{
     }
 }
 
+@media only screen and (max-width: 550px){
+    .sec4imgdiv h2{
+        font-size: 30px;
+    }
+    .p1stp4{
+        font-size: 15px;
+        margin-right: 20%;
+    }
+}
+
 /* footer  */
 
 .footer{
@@ -560,4 +604,16 @@ body{
 }
 .google1{
     margin-left: 20px;
+}
+@media only screen and (max-width: 550px){
+    .footer{
+        height: 100%;
+    }
+    .textDwn{
+        font-size: 35px;
+    }
+    .downBtns img{
+        width: 150px;
+        margin-bottom: 20px;
+    }
 }
