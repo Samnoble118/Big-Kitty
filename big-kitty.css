@@ -244,15 +244,22 @@ body{
 
 @media only screen and (max-width: 550px){
     .heroP1{
-        font-size: 40px;
+        font-size: 30px;
     }
     .heroMainCtn{
-        height: 100%;
+        height: 80%;
     }
     .heroHeadings button{
         width: 150px;
         font-size: 15px;
     }
+    .heroP2{
+        font-size: 15px;
+    }
+    .heroHeadings{
+        padding: 0;
+    }
+    
 }
 
 /* secion 2 */
@@ -369,6 +376,9 @@ body{
     .downImg img{
         width: 150px;
     }
+    .sec2Div{
+        padding: 0;
+    }
 }
 
 /* section 3 */
@@ -466,6 +476,12 @@ body{
     .p1stp{
         font-size: 15px;
         margin-right: 20%;
+    }
+    .sec3textdiv{
+        margin: 0;
+    }
+    .sec3imgdiv img{
+        padding: 10px;
     }
 }
 
@@ -567,6 +583,13 @@ body{
         font-size: 15px;
         margin-right: 20%;
     }
+    .sec4imgdiv{
+        margin: 0;
+    }
+    .sec4textdiv img{
+        padding: 10px;
+    }
+        
 }
 
 /* footer  */
